@@ -47,7 +47,7 @@ cat "$KUBECONFIG"
 
 # Rancher Import
 ### INSERT RANCHER IMPORT COMMAND HERE
-curl --insecure -sfL https://jvb.ddns.net/v3/import/swwc66zrm9dxn8rr825gd8cqwmtwjz429g8bv75c52mnp9wc6bwb65.yaml | kubectl apply -f -
+
 
 rm $KUBECONFIG
 unset KUBECONFIG
