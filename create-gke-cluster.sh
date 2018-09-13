@@ -3,7 +3,7 @@
 # Create a project
 echo "Creating a Project."
 project_name=gke-demo
-project_id=gke-demo-$RANDOM
+project_id=gke-demo-$RANDOM-$RANDOM
 cluster_name=gke-demo-cluster
 zone=us-east1-b
 
