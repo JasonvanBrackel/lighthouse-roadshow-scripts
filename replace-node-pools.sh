@@ -1,4 +1,5 @@
 #!/bin/sh
+# In order for Rancher-Created Kubernetes Clusters to work alongside the GCP Marketplace, the default node pools must be replaced.
 cluster_name=<Your Cluster Name>
 zone=<Your Cluster Zone>
 old_nodepool=default-pool
