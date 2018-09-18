@@ -1,3 +1,4 @@
+# (WIP) Working toward running Rancher in GKE
 helm_version="v2.10.0"
 rancher_hostname="rancher.vanbrackel.net"
 
