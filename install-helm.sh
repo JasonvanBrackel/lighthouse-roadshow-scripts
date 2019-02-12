@@ -1,6 +1,7 @@
 # (WIP) Working toward running Rancher in GKE
 helm_version="v2.10.0"
-rancher_hostname="rancher.vanbrackel.net"
+rancher_hostname="rancher.mymanagementcluster.com"
+email="jason@vanbrackel.net"
 
 
 # Install Helm and Setup Tiller
@@ -46,4 +47,7 @@ sleep 10s
 ./linux-amd64/helm install rancher-stable/rancher \
   --name rancher \
   --namespace cattle-system \
-  --set hostname=$rancher_hostname
+  --set hostname=$rancher_hostname \
+  --set ingress.tls.source=letsEncrypt \
+  --set letsEncrypt.email=$email
+

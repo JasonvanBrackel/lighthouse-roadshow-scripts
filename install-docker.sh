@@ -4,8 +4,8 @@ k8s_nodes=./kubernetes-nodes
 private_key_path=/home/jason/.ssh/id_rsa
 admin=jason
 
-
-cat $k8s_nodes | xargs -I% ssh -oStrictHostKeyChecking=no -i $private_key_path $admin@% "echo '$admin ALL=(ALL) NOPASSWD:ALL' | sudo EDITOR='tee -a' visudo"
+# Keeping this for notes.  Can't work with out an interactive session
+#cat $k8s_nodes | xargs -I% ssh -oStrictHostKeyChecking=no -i $private_key_path $admin@% "echo '$admin ALL=(ALL) NOPASSWD:ALL' | sudo EDITOR='tee -a' visudo"
 
 cat $k8s_nodes | xargs -I% ssh -oStrictHostKeyChecking=no -i $private_key_path $admin@% "mkdir ~/.ssh"
 
